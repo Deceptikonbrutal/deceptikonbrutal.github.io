@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    width: 1110px;
+    margin: 0 auto;
+    display: block;
+
+    background-color: #FFFFFFAA;
+}
+
+header {
+    z-index: 1024;
+
+    background-color: #464646;
+    height: 4.5rem;
+    padding: 1rem;
+
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+
+    box-shadow: #00000055 0px 2px 10px;
+}
+
+main {
+    background-color: #CCCCCC;
+}
+
+footer {
+    background-color: #FFFFFF;
+    padding: 1rem;
+}
+
+body {
+    background-color: gray;
+}
+
+p {
+    color: #282828;
+}
+
+#logo {
+    background-color: #FF8013;
+    color: #FFFFFF !important;
+    text-decoration: none;
+    
+    width: 5rem;
+
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#about .left, #about .right {
+    width: calc(50% - 1rem);
+    height: 100%;
+}
+
+#about .right {
+    background-color: #eeeeee;
+    
+    border-radius: 5px;
+    
+    padding: 1rem;
+    position: relative;
+}
+
+#about .right button {
+    position: absolute;
+    left:     1rem;
+    bottom:   1rem;
+}
+
+#about .a {
+    height: calc(50% - 1rem);
+    display: block;
+    background-color: #eeeeee;
+
+    border-radius: 5px;
+
+    padding: 1rem;
+}
+
+#about .a:not(:first-child) {
+    margin-top: 2rem;
+}
+
+#about .a p {
+    color: #000000;
+}
+
+#kurzy h2 {
+    text-align: center;
+    height: 2em;
+}
+
+#kurzy img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 1rem;
+    height: 10rem;
+}
+
+#kurzy p {
+    height: 5em;
+}
+
+#kurzy #otoc {
+    rotate: 180deg;
+}
+
+#kurzy {
+    display: flex;
+}
+
+#kurzy .a {
+    width: calc(33% - 1rem);
+    
+    background-color: #eeeeee;
+    
+    padding: 1rem;
+    
+    border-radius: 5px;
+
+}
+
+#kurzy .a:not(:first-child) {
+    margin-left: 1rem;
+}
+
+#kurzy .a p {
+    color: #000000;
+    display: block;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#about button {
+    margin-top: 2rem;
+}
+
+nav {
+    
+    display: block;
+    height: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100%;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav li a {
+    color: #FFFFFF;
+    padding: 0.7rem;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #FF8013;
+    border-radius: 3px;
+}
+
+h1 {
+    margin-bottom: 0.1rem;
+    font-size: 2.5rem;
+    
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#uvod h1 {
+    text-shadow: #000000 2px 2px 10px;
+}
+
+.slogan {
+    font-style: italic;
+    color: #eeeeee;
+    font-size: 1.2rem;
+
+    text-shadow: #000000 2px 2px 10px;
+    text-align: center;
+}
+
+section {
+    padding: 2rem;
+}
+
+#uvod {
+    background-image: url("https://www.maxmax.sk/images/thumbnails/610/610/detailed/88/D%C4%9Btsk%C3%BD_obr%C3%A1zek_MAX_-_vzor_153.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#about {
+    height: 50vh;
+}
+
+#about p, #about h2 {
+    color: #000000;
+}
+
+#about h2 {
+    margin-bottom: 0.5rem;
+}
+
+#about h1 {
+    color: #FF8013;
+}
+
+.kont {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.kont .a {
+    width: 24.4%;
+    display: inline-block;
+}
+
+.kont .a p {
+    margin-top: 2rem;
+}
+
+.text-left p {
+    text-align: left;
+    font-weight: bold;
+}
+
+.text-right p {
+    text-align: right;
+    font-weight: bold;
+}
+
+.kont form {
+    width: 50%;
+    display: inline-block;
+}
+
+.kont form input, .kont form textarea, .kont form button {
+    display: block;
+    
+    width: 100% !important;
+
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+.kont form input, .kont form textarea {
+    border-radius: 5px;
+    border: 3px solid #888888;
+}
+
+.kont form textarea {
+    resize: none;
+    height: 9rem;
+}
+
+button {
+    background-color: #FF8013;
+    border: 3px solid #FF8013;
+    border-radius: 3px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: bold;
+    
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #FF8013;
+}
+
+.kont form p {
+    font-weight: bold;
+}
+
+.ikonky .icon {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+
+    border-radius: 3px;
+    transition: 0.1s;
+
+    color: #000000;
+}
+
+.ikonky .icon:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.ikonky {
+    display: block;
+    margin: 1rem auto;
+
+    width: max-content;
+}
+
+#uvod div {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    
+    width: max-content;
+}
+
+#uvod button {
+    box-shadow: #000000 2px 2px 10px;
+}
+
+#novinky {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #888888;
+    border-radius: 5px;
+    box-shadow: #000000 2px 2px 10px;
+}
+
+#novinky p {
+    color: #ffffff;
+}
+
+#novinky h1 {
+    text-shadow: none;
+    margin-bottom: 0.5rem;
+}
+
+#novinky img {
+    display: block;
+    margin: 0.5rem auto;
+    width: 60%;
+    border-radius: 5px;
+}
